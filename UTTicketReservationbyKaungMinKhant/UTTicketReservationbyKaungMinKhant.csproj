@@ -52,6 +52,18 @@
     <Compile Include="adminpanelViewcs.Designer.cs">
       <DependentUpon>adminpanelViewcs.cs</DependentUpon>
     </Compile>
+    <Compile Include="auditoriumView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="auditoriumView.Designer.cs">
+      <DependentUpon>auditoriumView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="employeeView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="employeeView.Designer.cs">
+      <DependentUpon>employeeView.cs</DependentUpon>
+    </Compile>
     <Compile Include="insertDataView.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -116,6 +128,12 @@
     </Compile>
     <EmbeddedResource Include="adminpanelViewcs.resx">
       <DependentUpon>adminpanelViewcs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="auditoriumView.resx">
+      <DependentUpon>auditoriumView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="employeeView.resx">
+      <DependentUpon>employeeView.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="insertDataView.resx">
       <DependentUpon>insertDataView.cs</DependentUpon>
