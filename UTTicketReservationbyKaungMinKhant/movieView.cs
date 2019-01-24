@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace UTTicketReservationbyKaungMinKhant
 {
-    public partial class seatView2 : Form
+    public partial class movieView : Form
     {
-        public seatView2()
+        public movieView()
         {
             InitializeComponent();
-        }
-
-        private void label5_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }
