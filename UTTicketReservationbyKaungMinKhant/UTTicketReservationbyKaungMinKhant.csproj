@@ -64,11 +64,29 @@
     <Compile Include="employeeView.Designer.cs">
       <DependentUpon>employeeView.cs</DependentUpon>
     </Compile>
+    <Compile Include="insertAuditoriumView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="insertAuditoriumView.Designer.cs">
+      <DependentUpon>insertAuditoriumView.cs</DependentUpon>
+    </Compile>
     <Compile Include="insertDataView.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="insertDataView.Designer.cs">
       <DependentUpon>insertDataView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="insertMovieView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="insertMovieView.Designer.cs">
+      <DependentUpon>insertMovieView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="insertSeatView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="insertSeatView.Designer.cs">
+      <DependentUpon>insertSeatView.cs</DependentUpon>
     </Compile>
     <Compile Include="loginView.cs">
       <SubType>Form</SubType>
@@ -135,8 +153,17 @@
     <EmbeddedResource Include="employeeView.resx">
       <DependentUpon>employeeView.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="insertAuditoriumView.resx">
+      <DependentUpon>insertAuditoriumView.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="insertDataView.resx">
       <DependentUpon>insertDataView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="insertMovieView.resx">
+      <DependentUpon>insertMovieView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="insertSeatView.resx">
+      <DependentUpon>insertSeatView.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="loginView.resx">
       <DependentUpon>loginView.cs</DependentUpon>
