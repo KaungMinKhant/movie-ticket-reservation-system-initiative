@@ -22,6 +22,11 @@ namespace UTTicketReservationbyKaungMinKhant
 
         }
 
-        
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            adminpanelViewcs apvs = new adminpanelViewcs();
+            apvs.ShowDialog();
+        }
     }
 }

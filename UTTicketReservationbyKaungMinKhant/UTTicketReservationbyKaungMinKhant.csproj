@@ -33,6 +33,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="MySql.Data, Version=8.0.14.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\MySQL\MySQL Connector Net 8.0.14\Assemblies\v4.5.2\MySql.Data.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -58,6 +62,7 @@
     <Compile Include="auditoriumView.Designer.cs">
       <DependentUpon>auditoriumView.cs</DependentUpon>
     </Compile>
+    <Compile Include="Class1.cs" />
     <Compile Include="employeeView.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -88,6 +93,7 @@
     <Compile Include="insertSeatView.Designer.cs">
       <DependentUpon>insertSeatView.cs</DependentUpon>
     </Compile>
+    <Compile Include="Interface1.cs" />
     <Compile Include="loginView.cs">
       <SubType>Form</SubType>
     </Compile>
