@@ -63,6 +63,7 @@
       <DependentUpon>auditoriumView.cs</DependentUpon>
     </Compile>
     <Compile Include="Class1.cs" />
+    <Compile Include="dbConnection.cs" />
     <Compile Include="employeeView.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -185,6 +186,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="receiptView.resx">
       <DependentUpon>receiptView.cs</DependentUpon>
@@ -219,6 +221,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\background-ticket.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

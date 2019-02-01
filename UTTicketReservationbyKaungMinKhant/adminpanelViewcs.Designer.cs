@@ -102,6 +102,7 @@
             this.button6.TabIndex = 6;
             this.button6.Text = "Insert Data";
             this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
             // label2
             // 
@@ -123,9 +124,9 @@
             // 
             // button8
             // 
-            this.button8.Location = new System.Drawing.Point(397, 236);
+            this.button8.Location = new System.Drawing.Point(355, 216);
             this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(137, 23);
+            this.button8.Size = new System.Drawing.Size(164, 23);
             this.button8.TabIndex = 9;
             this.button8.Text = "Database Testing";
             this.button8.UseVisualStyleBackColor = true;

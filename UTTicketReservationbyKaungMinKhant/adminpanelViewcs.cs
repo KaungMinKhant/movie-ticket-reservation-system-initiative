@@ -21,7 +21,8 @@ namespace UTTicketReservationbyKaungMinKhant
 
         private void button8_Click(object sender, EventArgs e)
         {
-            String connString ="Data Source=127.0.0.1;" +"Initial Catalog=movie_ticket_reservation_system;" +"User id=root;" +"Password='';";
+
+            String connString = "Data Source=127.0.0.1;" + "Initial Catalog=movie_ticket_reservation_system;" + "User id=root;" + "Password='';";
             MySqlConnection conn = new MySqlConnection(connString);
             MySqlCommand command = conn.CreateCommand();
             command.CommandText = "SELECT test_name FROM test";
@@ -29,7 +30,7 @@ namespace UTTicketReservationbyKaungMinKhant
             {
                 conn.Open();
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
             }
@@ -40,6 +41,13 @@ namespace UTTicketReservationbyKaungMinKhant
                 MessageBox.Show(reader["test_name"].ToString());
             }
             Console.ReadLine();
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            insertDataView idv = new insertDataView();
+            idv.ShowDialog();
         }
     }
 }
