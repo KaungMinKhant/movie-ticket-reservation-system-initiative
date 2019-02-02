@@ -24,28 +24,12 @@ namespace UTTicketReservationbyKaungMinKhant
 
         private void button1_Click(object sender, EventArgs e)
         {
-
-            try
-            {
-                String connString = "Data Source=127.0.0.1;" + "Initial Catalog=movie_ticket_reservation_system;" + "User id=root;" + "Password='';";
-
-                String CommandText = "INSERT INTO auditorium VALUES('', '" + this.textBox1.Text+ "', '" + this.textBox2.Text +"')";
-                MySqlConnection conn = new MySqlConnection(connString);
-                MySqlCommand command = new MySqlCommand(CommandText, conn);
-                MySqlDataReader reader;
-                conn.Open();
-                reader = command.ExecuteReader();
-                MessageBox.Show("Data Saved");
-                while (reader.Read())
-                {
-                    
-                }
-                conn.Close();
-            }
-            catch(Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
+            dbConnection dbconn = new dbConnection();
+            String database_name = "auditorium";
+            String data_one = this.textBox1.Text;
+            String data_two = this.textBox2.Text;
+            dbconn.insertion(database_name, data_one, data_two);
+           
         }
     }
 }
