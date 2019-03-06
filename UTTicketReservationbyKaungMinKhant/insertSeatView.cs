@@ -48,8 +48,9 @@ namespace UTTicketReservationbyKaungMinKhant
                 while (reader.Read())
                 {
                     String data_three = reader["auditorium_id"].ToString();
-                     String commandText = "INSERT INTO `seat` (`seat_id`, `seat_row`, `seat_number`, `auditorium_id`) VALUES (NULL, '"+ data_one + "', '" + data_two + "', '" + data_three + "')";
-                     dbc.insert(commandText);
+                    
+                    String commandText = "INSERT INTO `seat` (`seat_id`, `seat_row`, `seat_number`, `auditorium_id`) VALUES (NULL, '"+ data_one + "', '" + data_two + "', '" + data_three + "')";
+                    dbc.insert(commandText);
                 }
                 Console.ReadLine();
                 conn.Close();

@@ -30,5 +30,19 @@ namespace UTTicketReservationbyKaungMinKhant
             insertAuditoriumView iav = new insertAuditoriumView();
             iav.ShowDialog();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            insertMovieView imv = new insertMovieView();
+            imv.ShowDialog();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            insertScreeningView isv = new insertScreeningView();
+            isv.ShowDialog();
+        }
     }
 }

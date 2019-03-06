@@ -15,6 +15,9 @@ namespace UTTicketReservationbyKaungMinKhant
         public movieView()
         {
             InitializeComponent();
+            dbConnection dbc = new dbConnection();
+            dbc.selection("moive", dataGridView1);
         }
+       
     }
 }

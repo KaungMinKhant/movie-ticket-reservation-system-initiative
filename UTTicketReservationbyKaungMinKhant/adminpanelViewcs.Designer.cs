@@ -67,6 +67,7 @@
             this.button2.TabIndex = 2;
             this.button2.Text = "Seats";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button3
             // 
@@ -85,6 +86,7 @@
             this.button4.TabIndex = 4;
             this.button4.Text = "Movies";
             this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // button5
             // 

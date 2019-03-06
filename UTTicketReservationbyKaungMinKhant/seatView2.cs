@@ -15,11 +15,14 @@ namespace UTTicketReservationbyKaungMinKhant
         public seatView2()
         {
             InitializeComponent();
+            Table_Load();
         }
 
-        private void label5_Click(object sender, EventArgs e)
+        public void Table_Load()
         {
-
+            dbConnection dbc = new dbConnection();
+            dbc.selection("seat", dataGridView1);
         }
+        
     }
 }
