@@ -22,11 +22,7 @@ namespace UTTicketReservationbyKaungMinKhant
         private void button8_Click(object sender, EventArgs e)
         {
 
-            dbConnection dbconn = new dbConnection();
-            String entity_name = "test_name";
-            String database_name = "test";
-
-            dbconn.selection(entity_name, database_name);
+           
 
           
         }
@@ -42,6 +38,13 @@ namespace UTTicketReservationbyKaungMinKhant
         {
             dbConnection dbconn = new dbConnection();
            
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            auditoriumView av = new auditoriumView();
+            av.ShowDialog();
         }
     }
 }
