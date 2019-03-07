@@ -60,5 +60,12 @@ namespace UTTicketReservationbyKaungMinKhant
             movieView mv = new movieView();
             mv.ShowDialog();
         }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            screeningView sv = new screeningView();
+            sv.ShowDialog();
+        }
     }
 }

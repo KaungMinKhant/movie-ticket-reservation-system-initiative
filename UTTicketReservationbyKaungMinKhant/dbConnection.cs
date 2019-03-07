@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using MySql.Data.MySqlClient;
 
+
 namespace UTTicketReservationbyKaungMinKhant
 {
     class dbConnection
@@ -43,7 +44,7 @@ namespace UTTicketReservationbyKaungMinKhant
             {
                 String connString = "Data Source=127.0.0.1;" + "Initial Catalog=movie_ticket_reservation_system;" + "User id=root;" + "Password='';";
 
-                
+               
                 MySqlConnection conn = new MySqlConnection(connString);
                 MySqlCommand command = new MySqlCommand(commandText, conn);
                 MySqlDataReader reader;
@@ -64,10 +65,10 @@ namespace UTTicketReservationbyKaungMinKhant
 
        
 
-        public void deletion(String database_name, String input_data)
+        public void deletion(String commandText)
         {
             String connString = "Data Source=127.0.0.1;" + "Initial Catalog=movie_ticket_reservation_system;" + "User id=root;" + "Password='';";
-            String commandText = "DELETE FROM " + database_name + " WHERE auditorium_id = " + input_data;
+            //String commandText = "DELETE FROM " + database_name + " WHERE auditorium_id = " + input_data;
             MySqlConnection conn = new MySqlConnection(connString);
             MySqlCommand command = new MySqlCommand(commandText, conn);
             try
@@ -111,8 +112,34 @@ namespace UTTicketReservationbyKaungMinKhant
                 MessageBox.Show(ex.Message);
             }
         }
+        public void Fill_Seat(String data_name, String commandText, ComboBox combo_box)
+        {
+            dbConnection dbc = new dbConnection();
+            String connString = "Data Source=127.0.0.1;" + "Initial Catalog=movie_ticket_reservation_system;" + "User id=root;" + "Password='';";
+           
+            MySqlConnection conn = new MySqlConnection(connString);
+            MySqlCommand command = new MySqlCommand(commandText, conn);
+            try
+            {
+                MySqlDataReader reader;
+                conn.Open();
+                reader = command.ExecuteReader();
+                while (reader.Read())
+                {
+                    String data = reader.GetString(data_name);
+                    combo_box.Items.Add(data);
+                }
+                conn.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
 
-       
+
+
+
 
         public dbConnection()
         {

@@ -63,6 +63,12 @@
     <Compile Include="auditoriumView.Designer.cs">
       <DependentUpon>auditoriumView.cs</DependentUpon>
     </Compile>
+    <Compile Include="choosebackorfrontend.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="choosebackorfrontend.Designer.cs">
+      <DependentUpon>choosebackorfrontend.cs</DependentUpon>
+    </Compile>
     <Compile Include="Class1.cs" />
     <Compile Include="Datagyi.cs" />
     <Compile Include="dbConnection.cs" />
@@ -129,6 +135,12 @@
     <Compile Include="registerView.Designer.cs">
       <DependentUpon>registerView.cs</DependentUpon>
     </Compile>
+    <Compile Include="reservation2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="reservation2.Designer.cs">
+      <DependentUpon>reservation2.cs</DependentUpon>
+    </Compile>
     <Compile Include="reservationlogView.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -164,6 +176,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="auditoriumView.resx">
       <DependentUpon>auditoriumView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="choosebackorfrontend.resx">
+      <DependentUpon>choosebackorfrontend.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="employeeView.resx">
       <DependentUpon>employeeView.cs</DependentUpon>
@@ -204,6 +219,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="registerView.resx">
       <DependentUpon>registerView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reservation2.resx">
+      <DependentUpon>reservation2.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="reservationlogView.resx">
       <DependentUpon>reservationlogView.cs</DependentUpon>

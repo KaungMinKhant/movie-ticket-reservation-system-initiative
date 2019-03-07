@@ -15,6 +15,8 @@ namespace UTTicketReservationbyKaungMinKhant
         public screeningView()
         {
             InitializeComponent();
+            dbConnection dbc = new dbConnection();
+            dbc.selection("screening", dataGridView1);
         }
     }
 }

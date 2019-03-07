@@ -125,6 +125,7 @@
             this.button7.TabIndex = 8;
             this.button7.Text = "Screening";
             this.button7.UseVisualStyleBackColor = true;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
             // button8
             // 

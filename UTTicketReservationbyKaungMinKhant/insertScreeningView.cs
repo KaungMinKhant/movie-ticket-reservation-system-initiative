@@ -20,6 +20,7 @@ namespace UTTicketReservationbyKaungMinKhant
             dbc.Fill_Combo("movie_title", "moive", comboBox1);
             dbc.Fill_Combo("auditorium_name", "auditorium", comboBox2);
             Fillcombothree();
+            
         }
         public void Fillcombothree()
         {
@@ -67,6 +68,7 @@ namespace UTTicketReservationbyKaungMinKhant
                         while (reader1.Read())
                         {
                             String data_two = reader1["auditorium_id"].ToString();
+                            
                             String commandText = "INSERT INTO `screening` (`screening_id`, `movie_id`, `auditorium_id`, `screening_start`) VALUES (NULL, '" + data_one + "', '" + data_two + "', '" + data_three + "')";
                             dbc.insert(commandText);
                         }
